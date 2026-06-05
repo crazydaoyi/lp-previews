@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HealthFrontline.org | The 30-Second Memory Breakthrough</title>
+    <meta property="og:title" content="The 30-Second Morning Ritual Restoring Memory for Seniors">
+    <meta property="og:description" content="A neuroscientist at Harvard discovered the real cause of memory loss after 50. It's not what you think.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581579438747-1046b747e7d4?w=800&h=420&fit=crop">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --accent: #ef4444;
+            --accent-dark: #dc2626;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --border: #e2e8f0;
+            --success: #22c55e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Merriweather', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; height: auto; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Top bar */
+        .top-bar {
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Inter', sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,.05);
+        }
+        .brand {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 15px;
+            letter-spacing: -0.3px;
+        }
+        .trending-badge {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            color: #92400e;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .8; }
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px 0;
+        }
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+            color: #6d28d9;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .headline {
+            font-size: clamp(26px, 5.5vw, 34px);
+            font-weight: 900;
+            line-height: 1.3;
+            color: #0f172a;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+        .headline .highlight-word {
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-color: rgba(37,99,235,.3);
+            text-underline-offset: 3px;
+        }
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        .author-pic {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--border);
+        }
+        .byline strong { color: var(--text); }
+        .byline-dot { width: 4px; height: 4px; border-radius: 50%; background: #cbd5e1; }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 8px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            transition: transform .2s;
+        }
+        .stat-card:hover { transform: translateY(-2px); }
+        .stat-num {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        /* CTA Buttons */
+        .cta-section {
+            padding: 20px 16px;
+            text-align: center;
+        }
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(37,99,235,.3);
+            transition: all .25s;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            max-width: 440px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,.15) 50%, transparent 60%);
+            animation: cta-shine 3s ease-in-out infinite;
+        }
+        @keyframes cta-shine {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37,99,235,.35);
+        }
+        .cta-btn .icon { font-size: 22px; }
+        .cta-meta {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34,197,94,.4); }
+            50% { opacity: .6; box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+        }
+
+        /* Mid CTA variant */
+        .mid-cta {
+            background: linear-gradient(135deg, #fef2f2, #fee2e2);
+            border: 1px solid #fecaca;
+            padding: 24px 16px;
+            border-radius: 16px;
+            margin: 32px 0;
+            text-align: center;
+        }
+        .mid-cta .cta-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            box-shadow: 0 4px 14px rgba(239,68,68,.3);
+        }
+        .mid-cta .cta-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #991b1b;
+            margin-bottom: 14px;
+        }
+
+        /* Article */
+        .article {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 16px 20px;
+        }
+        .article p {
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: #334155;
+            line-height: 1.85;
+        }
+        .article .subhead {
+            font-size: 22px;
+            font-weight: 900;
+            color: #0f172a;
+            margin: 32px 0 16px;
+            line-height: 1.3;
+        }
+        .article .pull-quote {
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            padding: 20px 24px;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 12px 12px 0;
+            margin: 28px 0;
+            font-style: italic;
+            font-size: 16px;
+            color: #1e40af;
+            line-height: 1.7;
+        }
+        .article .pull-quote strong {
+            font-style: normal;
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        .article blockquote {
+            background: var(--bg-alt);
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+            font-style: italic;
+            color: #475569;
+            border: 1px solid var(--border);
+        }
+        .article ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .article li {
+            font-size: 17px;
+            margin-bottom: 10px;
+            color: #334155;
+            line-height: 1.7;
+        }
+        .article li strong { color: var(--primary); }
+
+        /* Science Box */
+        .science-box {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            margin: 28px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,.04);
+        }
+        .science-box h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+        .science-box ul { padding-left: 18px; }
+        .science-box li {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .science-box li strong { color: var(--text); }
+
+        /* Progress Bar */
+        .urgency-bar {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        .urgency-inner {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border: 1px solid #fcd34d;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .urgency-icon { font-size: 20px; }
+        .urgency-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: #92400e;
+            flex: 1;
+        }
+        .progress-track {
+            width: 100%;
+            height: 6px;
+            background: rgba(146,64,14,.15);
+            border-radius: 3px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            border-radius: 3px;
+            width: 73%;
+            animation: progress-pulse 4s ease-in-out infinite;
+        }
+        @keyframes progress-pulse {
+            0%, 100% { width: 73%; }
+            50% { width: 71%; }
+        }
+
+        /* Comments */
+        .comments {
+            max-width: 720px;
+            margin: 40px auto 0;
+            padding: 0 16px;
+        }
+        .comments-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border);
+        }
+        .comment {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 10px;
+            transition: box-shadow .2s;
+        }
+        .comment:hover { box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .comment-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+        .comment-name {
+            font-weight: 700;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+        .comment-meta {
+            font-size: 12px;
+            color: var(--text-light);
+            font-family: 'Inter', sans-serif;
+        }
+        .comment-stars {
+            margin-left: auto;
+            color: #f59e0b;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .comment-text {
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.7;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            max-width: 720px;
+            margin: 40px auto 80px;
+            padding: 20px 16px;
+            font-size: 11px;
+            color: #94a3b8;
+            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,.96);
+            padding: 10px 16px;
+            text-align: center;
+            box-shadow: 0 -4px 20px rgba(0,0,0,.1);
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transform: translateY(100%);
+            transition: transform .35s cubic-bezier(.4,0,.2,1);
+            border-top: 1px solid var(--border);
+        }
+        .sticky-cta.visible { transform: translateY(0); }
+        .sticky-cta .cta-btn {
+            padding: 14px 24px;
+            font-size: 16px;
+            max-width: 480px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .stats-bar { gap: 6px; }
+            .stat-card { padding: 10px 4px; }
+            .stat-num { font-size: 20px; }
+            .article p { font-size: 16px; }
+            .cta-btn { font-size: 16px; padding: 14px 24px; }
+        }
+        @media (min-width: 768px) {
+            .hero { padding-top: 32px; }
+            .article { padding: 0 24px; }
+            .cta-section { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="brand">HealthFrontline.org</div>
+    <div class="trending-badge">🔥 TRENDING: <span id="viewer-count">12,847</span> reading</div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="hero-label">
+        <span>🧠</span>
+        <span>Neuroscience Breakthrough</span>
+    </div>
+    <h1 class="headline">
+        "I'm 67. My Doctor Was <span class="highlight-word">Shocked</span> at My Last Checkup. Here's the 30-Second Morning Ritual That Changed Everything."
+    </h1>
+    <div class="byline">
+        <img class="author-pic" src="https://ui-avatars.com/api/?name=JH&background=2563eb&color=fff&size=38" alt="JH">
+        <span>By <strong>Johnson Henderson</strong></span>
+        <span class="byline-dot"></span>
+        <span>March 20, 2026</span>
+        <span class="byline-dot"></span>
+        <span>222,325 views · 6 min read</span>
+    </div>
+</div>
+
+<!-- Stats -->
+<div style="max-width:720px;margin:0 auto;padding:0 16px">
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-num">2,047</div>
+            <div class="stat-label">Study Participants</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">94%</div>
+            <div class="stat-label">Showed Improvement</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">30 sec</div>
+            <div class="stat-label">Daily Time Needed</div>
+        </div>
+    </div>
+</div>
+
+<!-- Urgency Bar -->
+<div class="urgency-bar">
+    <div class="urgency-inner">
+        <span class="urgency-icon">⏰</span>
+        <span class="urgency-text">This video has already been flagged once. <span id="time-remaining">23:14</span> before next review.</span>
+    </div>
+    <div class="progress-track">
+        <div class="progress-fill"></div>
+    </div>
+</div>
+
+<!-- CTA Top -->
+<div class="cta-section">
+    <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn">
+        <span class="icon">▶</span>
+        Watch the 2-Minute Video
+    </a>
+    <div class="cta-meta">
+        <span class="live-dot"></span>
+        <span id="watching-count">8,432</span> people watching now · Free access
+    </div>
+</div>
+
+<!-- Article -->
+<div class="article">
+    <p>If you're like most people over 50, you've probably noticed it happening gradually. First, it's small things — forgetting where you put your keys, blanking on a familiar name mid-conversation, walking into a room and wondering why.</p>
+
+    <p>Then it gets harder. You start avoiding social situations because you're embarrassed. You lie awake at night wondering <em>if this is how it starts</em>.</p>
+
+    <p>You're not alone. Over 42 million Americans experience some form of cognitive decline after 50. And for years, the medical establishment told us it was simply <strong>"part of aging."</strong></p>
+
+    <div class="pull-quote">
+        "We used to believe memory loss was inevitable after 50. We were wrong. The real cause is something that can be addressed — naturally."
+        <strong>— Dr. Richard S., Neuroscientist, Harvard Medical School</strong>
+    </div>
+
+    <h2 class="subhead">Everything We Thought We Knew About Memory Loss Was Wrong</h2>
+
+    <p>For decades, doctors believed that age-related cognitive decline was caused by the gradual death of brain cells. The conclusion was bleak: as we age, we simply lose neurons, and there's nothing we can do about it.</p>
+
+    <p>But a breakthrough study published in <em>Nature Neuroscience</em> just overturned that assumption entirely.</p>
+
+    <div class="pull-quote">
+        "Memory loss after 50 isn't caused by brain cell death. It's caused by a specific type of protein plaque that accumulates along neural pathways, blocking the brain's ability to send and receive signals — like a traffic jam on a highway."
+    </div>
+
+    <p>The research team studied 2,047 adults aged 50-83 over 3 years. Their discovery was unexpected — and immediately sparked a wave of follow-up research.</p>
+
+    <h2 class="subhead">The "Traffic Jam" Theory of Memory Loss</h2>
+
+    <p>Think of your brain's neural pathways like roads. When you're young, traffic flows freely. Information travels quickly between the hippocampus (where memories are formed) and the prefrontal cortex (where they're retrieved).</p>
+
+    <p>But as we age, a sticky protein called amyloid-beta begins to build up along these pathways. It doesn't kill brain cells — it just <em>blocks</em> them. The cells are still alive, still functioning. They just can't communicate.</p>
+
+    <div class="science-box">
+        <h3>🔬 The Research at a Glance</h3>
+        <ul>
+            <li><strong>Study Size:</strong> 2,047 participants, ages 50-83</li>
+            <li><strong>Duration:</strong> 3 years, double-blind, peer-reviewed</li>
+            <li><strong>Key Finding:</strong> 94% showed measurable cognitive improvement after 6 weeks</li>
+            <li><strong>Method:</strong> Natural compound targeting amyloid-beta plaque dissolution</li>
+            <li><strong>Published:</strong> <em>Nature Neuroscience</em>, Vol. 29, 2025</li>
+        </ul>
+    </div>
+
+    <h2 class="subhead">What Happened When People Tried It</h2>
+
+    <p>The results from the clinical trial were striking. After just 3 weeks on the protocol, participants showed measurable improvements in:</p>
+
+    <ul>
+        <li>Short-term memory recall — average improvement: <strong>31%</strong></li>
+        <li>Verbal fluency — finding words quickly: <strong>28%</strong></li>
+        <li>Spatial orientation — getting less lost: <strong>24%</strong></li>
+        <li>Overall cognitive processing speed: <strong>37%</strong></li>
+    </ul>
+
+    <!-- Mid CTA -->
+    <div class="mid-cta">
+        <div class="cta-label">👇 The video explains the science in 2 minutes</div>
+        <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn">
+            <span class="icon">▶</span>
+            See the Science — Watch Now
+        </a>
+    </div>
+
+    <blockquote>
+        "I've been practicing neurology for 22 years. I've never seen results like this from a natural intervention. It challenges everything we assumed about the limits of cognitive recovery in older adults."
+        <br><strong>— Neurologist, Massachusetts General Hospital</strong>
+    </blockquote>
+
+    <p>The method takes just 30 seconds each morning. It uses natural ingredients that have been available for decades — but only now has science understood <em>why</em> they work.</p>
+
+    <p>One 72-year-old grandfather from Ohio tried a simple morning ritual based on this research for just 3 weeks. His wife said it was <strong>"like getting him back."</strong></p>
+
+    <h2 class="subhead">Why This Works When Nothing Else Did</h2>
+
+    <p>The formula targets the <em>root cause</em> — not just the symptoms. While most memory supplements try to "stimulate" the brain temporarily, this approach actually helps restore the brain's own ability to form and retrieve memories.</p>
+
+    <p>And the best part? It's backed by over 2,000 participants in a double-blind clinical trial, with results published in peer-reviewed journals.</p>
+
+    <!-- Bottom CTA -->
+    <div style="text-align:center;padding:28px 0 8px">
+        <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn" style="background:linear-gradient(135deg,#059669,#047857);box-shadow:0 4px 14px rgba(5,150,105,.3)">
+            <span class="icon">▶</span>
+            Click Here to Watch Now — Free Access
+        </a>
+    </div>
+</div>
+
+<!-- Comments -->
+<div class="comments">
+    <div class="comments-title">💬 What Readers Are Saying</div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <div class="comment-avatar" style="background:#ede9fe;color:#7c3aed">M</div>
+            <div>
+                <div class="comment-name">Margaret T.</div>
+                <div class="comment-meta">Age 68 · Tampa, FL · Verified</div>
+            </div>
+            <div class="comment-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="comment-text">"I was skeptical, but after 3 weeks my husband noticed the difference before I did. I'm remembering my granddaughter's friends' names again. The science in the video makes sense once you hear the explanation."</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <div class="comment-avatar" style="background:#d1fae5;color:#059669">R</div>
+            <div>
+                <div class="comment-name">Robert K.</div>
+                <div class="comment-meta">Age 72 · Portland, OR · Verified</div>
+            </div>
+            <div class="comment-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="comment-text">"My MoCA score went from 19 to 26 in 2 months. My neurologist couldn't believe it. The 'traffic jam' analogy in the video finally made me understand what was happening in my brain."</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <div class="comment-avatar" style="background:#dbeafe;color:#2563eb">D</div>
+            <div>
+                <div class="comment-name">Diane L.</div>
+                <div class="comment-meta">Age 61 · Chicago, IL · Verified</div>
+            </div>
+            <div class="comment-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="comment-text">"As someone who reads medical journals for fun, I was impressed by the study design. The results are real. I started the next day."</div>
+    </div>
+</div>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+    <p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual results may vary. Please consult your physician before using this or any other supplement. THIS IS AN ADVERTORIAL AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE.</p>
+    <p style="margin-top:8px">© 2026 HealthFrontline.org. All rights reserved.</p>
+</div>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta" id="sticky-cta">
+    <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn">
+        <span class="icon">▶</span>
+        Watch the 2-Minute Video — Free
+    </a>
+</div>
+
+<script>
+// Sticky CTA
+const sticky = document.getElementById('sticky-cta');
+let stickyShown = false;
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 700 && !stickyShown) {
+        sticky.classList.add('visible');
+        stickyShown = true;
+    }
+});
+
+// Dynamic viewer count
+function updateViewers() {
+    const base = 8432;
+    const variation = Math.floor(Math.random() * 300) - 150;
+    const count = (base + variation).toLocaleString();
+    document.getElementById('watching-count').textContent = count;
+    document.getElementById('viewer-count').textContent = (12847 + Math.floor(Math.random() * 200 - 100)).toLocaleString();
+}
+setInterval(updateViewers, 4000);
+
+// Countdown timer
+let totalSec = 23 * 60 + 14;
+function tick() {
+    const m = Math.floor(totalSec / 60);
+    const s = totalSec % 60;
+    document.getElementById('time-remaining').textContent =
+        m + ':' + (s < 10 ? '0' : '') + s;
+    if (totalSec > 0) totalSec--;
+}
+setInterval(tick, 1000);
+</script>
+
+</body>
+</html>
