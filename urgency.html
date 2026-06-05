@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthFrontline.org | If You're Over 50 and Forget Names Sometimes… Read This</title>
+    <meta property="og:title" content="If You're Over 50 and Forget Names Sometimes…">
+    <meta property="og:description" content="This video is being shared across the country — and may not stay up for long.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516302752625-fcc3c51d30ea?w=800&h=420&fit=crop">
+    <meta property="og:url" content="https://healthfrontline.org/memory-c">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Merriweather',Georgia,serif;background:#0f0f0f;color:#e0e0e0;line-height:1.8}
+        a{text-decoration:none;color:inherit}
+
+        .top-bar{background:#1a1a1a;border-bottom:1px solid #333;padding:8px 20px;display:flex;align-items:center;justify-content:space-between;font-family:'Source Sans Pro',sans-serif;font-size:13px}
+        .top-bar .brand{font-weight:700;color:#ff6b35;font-size:16px}
+        .top-bar .trending{background:#3d1a00;padding:4px 14px;border-radius:20px;font-size:12px;color:#ffab76;animation:pulse-bar 2s ease-in-out infinite}
+        @keyframes pulse-bar{0%,100%{opacity:1}50%{opacity:.6}}
+
+        .article-header{max-width:720px;margin:0 auto;padding:30px 20px 0}
+        .headline{font-size:28px;font-weight:900;line-height:1.35;color:#fff;margin-bottom:16px}
+        .headline .warning-tag{display:inline-block;background:#ff6b35;color:#fff;padding:2px 10px;border-radius:4px;font-size:13px;font-family:'Source Sans Pro',sans-serif;margin-bottom:8px;animation:flash-tag 2s ease-in-out infinite}
+        @keyframes flash-tag{0%,100%{opacity:1}50%{opacity:.6}}
+        .byline{font-family:'Source Sans Pro',sans-serif;font-size:13px;color:#888;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+        .author-avatar{width:36px;height:36px;border-radius:50%;background:#333;display:inline-block;vertical-align:middle;overflow:hidden}
+        .author-avatar img{width:100%;height:100%;object-fit:cover}
+        .meta-dot{width:4px;height:4px;border-radius:50%;background:#666}
+        .stats{color:#666}
+
+        .cta-wrap{padding:20px;text-align:center}
+        .cta-btn{display:inline-block;background:linear-gradient(135deg,#ff6b35,#e64a19);color:#fff;padding:16px 36px;border-radius:50px;font-family:'Source Sans Pro',sans-serif;font-size:18px;font-weight:700;box-shadow:0 4px 20px rgba(255,107,53,.35);transition:all .3s;cursor:pointer;border:none;animation:pulse 2s ease-in-out infinite;text-align:center;width:90%;max-width:400px}
+        .cta-btn:hover{transform:translateY(-2px);box-shadow:0 6px 25px rgba(255,107,53,.5)}
+        .cta-btn .play-icon{margin-right:8px}
+        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+        .watching-now{font-family:'Source Sans Pro',sans-serif;font-size:13px;color:#888;margin-top:8px}
+        .watching-now .live-dot{display:inline-block;width:8px;height:8px;background:#ff6b35;border-radius:50%;margin-right:4px;animation:blink 1s infinite}
+        @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+        .urgency-text{font-family:'Source Sans Pro',sans-serif;font-size:13px;color:#ff6b35;margin-top:6px}
+
+        .hero-img{width:100%;max-width:720px;margin:0 auto;display:block;border-radius:8px}
+        .hero-img img{width:100%;height:auto;border-radius:8px}
+
+        .article-body{max-width:720px;margin:0 auto;padding:0 20px 20px}
+        .article-body p{font-size:17px;margin-bottom:22px;color:#ccc;line-height:1.9}
+        .article-body .highlight{background:#1a1a00;padding:20px 24px;border-left:4px solid #ff6b35;border-radius:0 8px 8px 0;margin:28px 0}
+        .article-body .highlight p{margin-bottom:0}
+        .article-body .subhead{font-size:22px;font-weight:700;color:#fff;margin:32px 0 16px}
+        .article-body blockquote{background:#1a1a1a;padding:20px 24px;border-radius:8px;margin:24px 0;font-style:italic;color:#aaa;border:1px solid #333}
+        .article-body blockquote p{margin-bottom:0}
+
+        .mid-cta{background:linear-gradient(135deg,#b71c1c,#880e4f);padding:24px;border-radius:12px;margin:32px 0;text-align:center}
+        .mid-cta .cta-btn{background:#fff;color:#b71c1c;box-shadow:0 4px 20px rgba(0,0,0,.3);animation:none}
+        .mid-cta .cta-btn:hover{transform:translateY(-2px);box-shadow:0 6px 25px rgba(0,0,0,.4)}
+        .mid-cta .cta-label{color:rgba(255,255,255,.85);font-family:'Source Sans Pro',sans-serif;font-size:14px;margin-bottom:12px}
+        .mid-cta .timer{font-family:'Source Sans Pro',sans-serif;font-size:24px;font-weight:700;color:#fff;margin-top:12px}
+
+        .warning-box{background:#2a0a0a;border:1px solid #ff6b35;padding:16px 20px;border-radius:8px;margin:20px 0;font-family:'Source Sans Pro',sans-serif}
+        .warning-box p{color:#ffab76;font-size:15px;margin-bottom:0}
+
+        .comments-section{max-width:720px;margin:40px auto 0;padding:0 20px}
+        .comments-title{font-family:'Source Sans Pro',sans-serif;font-size:18px;font-weight:700;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid #333;color:#fff}
+        .comment{background:#1a1a1a;padding:16px;border-radius:8px;margin-bottom:12px;border:1px solid #333}
+        .comment-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+        .comment-avatar{width:32px;height:32px;border-radius:50%;background:#333;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#999;font-family:'Source Sans Pro',sans-serif}
+        .comment-name{font-weight:700;font-size:14px;font-family:'Source Sans Pro',sans-serif;color:#fff}
+        .comment-loc{font-size:12px;color:#666;font-family:'Source Sans Pro',sans-serif}
+        .comment-stars{color:#ffc107;font-size:14px;letter-spacing:2px}
+        .comment-text{font-size:15px;color:#aaa;line-height:1.7}
+
+        .disclaimer{max-width:720px;margin:40px auto;padding:20px;font-size:11px;color:#666;line-height:1.6;font-family:'Source Sans Pro',sans-serif;border-top:1px solid #333}
+
+        .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(15,15,15,.97);padding:12px 20px;text-align:center;box-shadow:0 -2px 10px rgba(0,0,0,.3);z-index:100;backdrop-filter:blur(10px);transform:translateY(100%);transition:transform .3s}
+        .sticky-cta.visible{transform:translateY(0)}
+        .sticky-cta .cta-btn{padding:12px 30px;font-size:16px;width:100%;max-width:500px;animation:none}
+
+        @media(max-width:768px){
+            .headline{font-size:24px}
+            .article-body p{font-size:16px}
+            .cta-btn{font-size:16px;padding:14px 28px}
+            .top-bar .trending{display:none}
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="brand">HealthFrontline.org</div>
+    <div class="trending">⚠️ MAY BE REMOVED SOON</div>
+</div>
+
+<div class="article-header">
+    <div class="warning-tag">⚠️ IMPORTANT FOR ANYONE OVER 50</div>
+    <h1 class="headline">If You're Over 50 and Forget Names Sometimes… Watch This Before It's Taken Down</h1>
+    <div class="byline">
+        <div class="author-avatar">
+            <img src="https://ui-avatars.com/api/?name=JH&background=ff6b35&color=fff&size=36" alt="Johnson Henderson">
+        </div>
+        <span>By <strong>Johnson Henderson</strong></span>
+        <span class="meta-dot"></span>
+        <span>March 20, 2026</span>
+        <span class="meta-dot"></span>
+        <span class="stats">👁 222,325 views · ⏱ 4 min read</span>
+    </div>
+</div>
+
+<div style="height:20px"></div>
+
+<div class="warning-box" style="max-width:720px;margin:0 auto;padding:0 20px">
+    <p>⚠️ This video has already been flagged once. If you're reading this, it's still available. <strong>Don't wait.</strong></p>
+</div>
+
+<div class="cta-wrap">
+    <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn" id="cta-top">
+        <span class="play-icon">▶</span> Watch Before It's Gone — FREE
+    </a>
+    <div class="watching-now"><span class="live-dot"></span> 15,203 people watching now</div>
+    <div class="urgency-text">⏰ Average time remaining: 23 minutes</div>
+</div>
+
+<div class="article-body">
+    <p>Let me be direct with you.</p>
+
+    <p>If you're reading this, it means you've already noticed something. Maybe it started small — a name you couldn't recall, a word on the tip of your tongue, forgetting why you walked into a room.</p>
+
+    <p>You told yourself it was normal. Everyone forgets things, right?</p>
+
+    <p>But lately, it's been happening more. And the truth is, <strong>you're scared.</strong></p>
+
+    <div class="highlight">
+        <p>"The thing people don't talk about is the fear. Not the forgetting itself — the fear of <em>what comes next.</em> That's the real burden." — <strong>Susan R., 64, diagnosed with mild cognitive impairment</strong></p>
+    </div>
+
+    <p>Here's what nobody tells you: <strong>it might not be permanent.</strong></p>
+
+    <p>A short video circulating among doctors and health researchers explains a breakthrough that's restoring memory for thousands of people over 50. It takes 30 seconds each morning. It uses natural ingredients.</p>
+
+    <p>And it's already helping over 42,000 Americans.</p>
+
+    <h2 class="subhead">Why Are They Trying to Take This Down?</h2>
+
+    <p>Because it works. And the pharmaceutical industry doesn't like things that work without a prescription.</p>
+
+    <p>The video explains a discovery from a peer-reviewed study published in <em>Nature Neuroscience</em>. Researchers found that age-related memory loss isn't caused by brain cell death — it's caused by a specific protein buildup that <em>blocks</em> neural signals.</p>
+
+    <p>Your brain cells are still alive. They just can't "talk" to each other. And the solution is simpler than anyone imagined.</p>
+
+    <div class="mid-cta">
+        <div class="cta-label">👇 The video explains everything in 2 minutes</div>
+        <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn" id="cta-mid">
+            <span class="play-icon">▶</span> I Want to Watch It — Take Me There
+        </a>
+        <div class="timer" id="countdown">⏰ 23:14 remaining</div>
+    </div>
+
+    <h2 class="subhead">What People Are Saying</h2>
+
+    <blockquote>
+        <p>"I found this video at 2am when I couldn't sleep because I was worried about my memory. I watched it, started the method the next morning. Three weeks later, my daughter said 'Mom, you seem like yourself again.' I cried." — <strong>Carol D., 67</strong></p>
+    </blockquote>
+
+    <blockquote>
+        <p>"I'm a retired engineer. I don't believe in miracle cures. But the science in this video is solid. I've been doing it for 2 months. My cognitive tests are the best they've been in 5 years." — <strong>James W., 71</strong></p>
+    </blockquote>
+
+    <p>The video won't be available forever. It's already been flagged once and temporarily removed before being put back up.</p>
+
+    <p><strong>If it's still here when you read this, that's your window.</strong></p>
+
+    <div style="text-align:center;padding:24px 0">
+        <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn" id="cta-bottom" style="background:linear-gradient(135deg,#b71c1c,#880e4f);box-shadow:0 4px 20px rgba(183,28,28,.4)">
+            <span class="play-icon">▶</span> Watch Now — Before It's Gone
+        </a>
+    </div>
+</div>
+
+<div class="comments-section">
+    <div class="comments-title">💬 Recent Comments</div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <div class="comment-avatar" style="background:#3d1a00;color:#ffab76">M</div>
+            <div>
+                <div class="comment-name">Margaret T.</div>
+                <div class="comment-loc">Age 68 · Tampa, FL</div>
+            </div>
+            <div style="margin-left:auto" class="comment-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="comment-text">"Found this at 11pm last week. Couldn't stop watching. Started the next morning. Three weeks in and my husband said 'You're different.' I'm remembering my granddaughter's friends' names again."</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <div class="comment-avatar" style="background:#0a2a0a;color:#66bb6a">R</div>
+            <div>
+                <div class="comment-name">Robert K.</div>
+                <div class="comment-loc">Age 72 · Portland, OR</div>
+            </div>
+            <div style="margin-left:auto" class="comment-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="comment-text">"My MoCA score went from 19 to 26 in 2 months. My neurologist couldn't believe it. I don't know how long this video will stay up — share it while you can."</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <div class="comment-avatar" style="background:#1a0a2a;color:#ab76ff">D</div>
+            <div>
+                <div class="comment-name">Diane L.</div>
+                <div class="comment-loc">Age 61 · Chicago, IL</div>
+            </div>
+            <div style="margin-left:auto" class="comment-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="comment-text">"I was skeptical but the science is legit. Watched the whole thing. Started the next day. No regrets."</div>
+    </div>
+</div>
+
+<div class="disclaimer">
+    <p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual results may vary. Please consult your physician before using this or any other supplement. THIS IS AN ADVERTORIAL AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE.</p>
+    <p style="margin-top:8px">© 2026 HealthFrontline.org. All rights reserved.</p>
+</div>
+
+<div class="sticky-cta" id="sticky-cta">
+    <a href="https://ip.connectroutehub.com/69c4002620e10212f14d4bc5" class="cta-btn">
+        ▶ Watch Before It's Gone
+    </a>
+</div>
+
+<script>
+const stickyCta = document.getElementById('sticky-cta');
+window.addEventListener('scroll', function() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollY > 600) {
+        stickyCta.classList.add('visible');
+    } else {
+        stickyCta.classList.remove('visible');
+    }
+});
+
+// Countdown timer
+let totalSeconds = 23 * 60 + 14;
+function updateTimer() {
+    const mins = Math.floor(totalSeconds / 60);
+    const secs = totalSeconds % 60;
+    const timerEl = document.getElementById('countdown');
+    if (timerEl) {
+        timerEl.textContent = '⏰ ' + mins + ':' + (secs < 10 ? '0' : '') + secs + ' remaining';
+    }
+    if (totalSeconds > 0) totalSeconds--;
+}
+setInterval(updateTimer, 1000);
+
+// Dynamic viewer count
+function updateViewers() {
+    const base = 15203;
+    const variation = Math.floor(Math.random() * 300) - 150;
+    const count = base + variation;
+    document.querySelectorAll('.watching-now').forEach(el => {
+        el.innerHTML = '<span class="live-dot"></span> ' + count.toLocaleString() + ' people watching now';
+    });
+}
+setInterval(updateViewers, 5000);
+</script>
+
+</body>
+</html>
